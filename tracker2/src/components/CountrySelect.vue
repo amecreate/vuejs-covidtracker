@@ -1,5 +1,5 @@
 <template>
-    Select
+    <select v-model="selected"></select>
 </template>
 
 <script>
@@ -9,6 +9,11 @@ export default {
     },
 
     name: 'CountrySelect',
-    props: ['countries']
+    props: ['countries'],
+    data() {
+        return {
+            seleced: 0
+        }
+    }
 }
 </script>
