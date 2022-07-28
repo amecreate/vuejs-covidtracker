@@ -6,3 +6,10 @@
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    name: 'DataTitle',
+    props: ['text', 'dataDate'],
+}
+</script>
