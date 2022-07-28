@@ -12,6 +12,16 @@ export default {
   components: {
 
   },
+  data() {
+    return {
+      loading: true,
+      title: 'Global',
+      dataDate: '',
+      status: {},
+      countries: {},
+      loadingImage: require('../assets/hourglass.gif')
+    }
+  },
   methods: {
     async fetchCovidData() {
       const res = await fetch('https://api.covid19api.com/summary')
