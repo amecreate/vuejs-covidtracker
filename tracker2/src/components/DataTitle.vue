@@ -8,6 +8,8 @@
 </template>
 
 <script>
+import moment from 'moment'
+
 export default {
     name: 'DataTitle',
     props: ['text', 'dataDate'],
