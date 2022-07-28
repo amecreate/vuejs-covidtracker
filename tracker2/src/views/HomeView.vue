@@ -17,7 +17,7 @@ export default {
       loading: true,
       title: 'Global',
       dataDate: '',
-      status: {},
+      stats: {},
       countries: {},
       loadingImage: require('../assets/hourglass.gif')
     }
@@ -31,7 +31,11 @@ export default {
   },
   async created() {
     const data = await this.fetchCovidData()
-    console.log(data)
+    
+    this.dataDate = data.Date
+    this.stats = data.Global
+    this.countries = data.countries
+    this.loading = false
   }
 }
 </script>
