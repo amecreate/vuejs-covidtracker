@@ -1,6 +1,6 @@
 <template>
 <main v-if="!loading">
-  <DataTitle />
+  <DataTitle :text="title" />
 </main>
 
 <main class="flex flex-col align-center justify-center text-center" v-else>
