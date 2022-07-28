@@ -1,6 +1,6 @@
 <template>
 <main v-if="!loading">
-  Show Data
+  <DataTitle />
 </main>
 
 <main class="flex flex-col align-center justify-center text-center" v-else>
@@ -10,11 +10,12 @@
 </template>
 
 <script>
+import DataTitle from '@/components/DataTitle.vue'
 
 export default {
   name: 'HomeView',
   components: {
-
+    DataTitle
   },
   data() {
     return {
